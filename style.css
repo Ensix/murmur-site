@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'JuniusX';
+    src:url("./JuniusX-Regular.woff2");
+    font-weight: normal;
+    font-style:normal;
+}
+@font-face {
+    font-family: 'JuniusX';
+    src:url("./JuniusX-Bold.woff2");
+    font-weight: bold;
+    font-style:normal;
+}
+@font-face {
+    font-family: "Junicode VF";
+    src: url("JunicodeVF-Roman.woff2");
+    font-style: normal;
+    /*font-weight: 300 700;*/
+}
+@font-face {
+    font-family: "Junicode VF";
+    src: url("JunicodeVF-Italic.woff2");
+    font-style: italic;
+    /*font-weight: 300 700;*/
+}
+
+
+body {
+    background-image: url("./bg.jpg");
+    margin: 0px;
+    padding: 0px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+    color: black;
+    background-color: tan;
+
+
+    font-family: "Junicode VF", serif;
+
+    font-variant-ligatures: discretionary-ligatures;
+    font-feature-settings: "dlig";
+
+    font-variant-numeric: oldstyle-nums proportional-nums;
+    font-feature-settings: "onum", "pnum";
+
+}
+
+
+
+
+p {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 350;
+    font-stretch: 110%;
+
+
+    margin-top: 0px;
+}
+
+
+
+
+
+.heading-left + p {
+    margin-left: 40px;
+    text-align: left;
+}
+.heading-right + p {
+    margin-right: 40px;
+    text-align: right;
+}
+
+/*
+ *      p:before {
+ *        content: "❧ ";
+ *      }
+ */
+
+p i {
+    font-style: normal;
+    font-stretch: 120%;
+    font-weight: 500;
+
+    font-feature-settings: "cv10" 2;
+
+}
+
+p .bscaps {
+    font-variant-caps: small-caps;
+    font-feature-settings: "smcp";
+    font-style: normal;
+    font-weight: 700;
+    font-stretch: 125%;
+}
+
+.swash {
+    font-feature-settings: "swsh";
+}
+
+@supports ( font-variant-position: super ) {
+    .sups {
+        font-variant-position: super;
+    }
+}
+
+@supports not ( font-variant-position: super ) {
+    .sups {
+        font-feature-settings: "sups";
+    }
+}
+
+p .sups {
+    font-style: normal;
+}
+
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
