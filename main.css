@@ -232,8 +232,13 @@
 
       /* === LINEUP === */
 
-      table, th {
 
+      table, th, td {
+          box-sizing: border-box;
+      }
+
+
+      table, th {
 
 
           padding: 12px;
@@ -248,6 +253,7 @@
 
           width: 100%;
 
+
       }
 
       td, th {
@@ -255,6 +261,8 @@
           border-top:solid black 1px;
 
           text-align: center;
+
+          min-height: 48px;
       }
 
       tr:first-child td {
