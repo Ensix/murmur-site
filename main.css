@@ -290,7 +290,7 @@
     }
 
 
-    th {
+    th, .time-label {
         /*font-feature-settings: "smcp";*/
         font-style: normal;
         font-weight: 700;
@@ -300,7 +300,7 @@
 
 
 
-    th sub {
+    th sub, .time-label sub {
         font-style: italic;
         font-weight: 700;
         font-stretch: 125%;
@@ -325,6 +325,49 @@
         font-size: 16px;
         font-stretch: 90%;
     }
+
+
+    /* === GRID === */
+    .grid-container {
+        display: grid;
+        padding: 12px;
+
+        border: 2px solid black;
+        border-bottom-width: 4px;
+        backdrop-filter: blur(32px);
+        border-radius: 24px;
+
+        gap: 2px;
+    }
+
+    .grid-container > div, .grid-container > .cell-link {
+        padding: 12px;
+
+        border-left:solid black 1px;
+        border-top:solid black 1px;
+
+        text-align: center;
+
+        min-height: 48px;
+    }
+
+    .grid-container .cell-link {
+        display: block;
+    }
+
+    .grid-container .time-label {
+        border-left: none;
+    }
+
+    .grid-container .grid-header {
+        border-top: none;
+    }
+
+    .grid-container .empty-item {
+        border-left: none;
+        border-top: none;
+    }
+
 
 
 
@@ -360,7 +403,7 @@
     }
 
 
-    #artists h3 {
+    #artists h3, h3 {
         font-feature-settings: "smcp";
         font-style: normal;
         font-size: 32px;
