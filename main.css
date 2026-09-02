@@ -346,13 +346,21 @@
 
 
     .grid-container > div, .grid-container > .cell-link {
-        border-left:solid black 1px;
-        border-top:solid black 1px;
+
 
         text-align: center;
 
         display: block;
         padding: 12px;
+
+        vertical-align: middle;
+
+        box-sizing: border-box;
+    }
+
+    .grid-container > .cell-link {
+        border-left:solid black 1px;
+        border-top:solid black 1px;
     }
 
 
@@ -387,6 +395,7 @@
 
     .grid-header {
         border-top:none;
+        border-left:solid black 1px;
 
         font-style: normal;
         font-weight: 700;
@@ -395,6 +404,7 @@
     }
 
     .time-label {
+        border-top:solid black 1px;
         font-style: normal;
         font-weight: 700;
         font-stretch: 125%;
