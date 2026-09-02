@@ -341,6 +341,10 @@
         padding: 12px;
 
         gap: 2px;
+
+        overflow-x: auto;
+
+
     }
 
 
